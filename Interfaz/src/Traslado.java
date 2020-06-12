@@ -1,10 +1,17 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
-
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+
+////////////////////////////////////////////
+//
+//
+//@Author Robert Vasquez - 2019
+//
+//
+///////////////////////////////////////////
 
 public class Traslado {
 	public static void main(String[] arg){
@@ -35,7 +42,7 @@ public class Traslado {
 		tx.rotate(180);
 		
 		g2d.setTransform(tx);
-		g2d.drawImage(new ImageIcon("C:\\Users\\Robert\\Pictures\\two.png").getImage(), tx, this);
+		g2d.drawImage(new ImageIcon("..\\Pictures\\two.png").getImage(), tx, this);
 		}
 	}
 	

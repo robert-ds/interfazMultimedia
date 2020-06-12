@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
@@ -8,12 +7,17 @@ import javax.swing.BoxLayout;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
-
 import java.io.IOException;
-
 import javax.sound.sampled.UnsupportedAudioFileException;
-
 import java.io.File;
+
+////////////////////////////////////////////
+//
+//
+//	@Author Robert Vasquez - 2019
+//
+//
+///////////////////////////////////////////
 
 public class Sonido {
 	JFrame ventana;
@@ -35,7 +39,7 @@ public class Sonido {
 		
 		try{
 			sonido = AudioSystem.getClip();
-			File archivo = new File("C:\\Users\\Robert\\Music\\The_Cello_Song_-_Bach_is_back_with_7_more_cellos_-_The_Piano_Guys");
+			File archivo = new File("..\\Music\\The_Cello_Song_-_Bach_is_back_with_7_more_cellos_-_The_Piano_Guys");
 			sonido.open(AudioSystem.getAudioInputStream(archivo));
 			sonido.start();
 			Thread.sleep(1000);
